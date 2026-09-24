@@ -59,7 +59,7 @@
   if (sizeSlider) {
     sizeSlider.addEventListener('input', function () { applySize(parseFloat(sizeSlider.value)); });
     /* the page opens with the figure enlarged; less so on a phone, where it would swamp the text */
-    applySize(window.matchMedia('(max-width: 54rem)').matches ? 1 : parseFloat(sizeSlider.value));
+    applySize(window.matchMedia('(max-width: 54rem)').matches ? 1.6 : parseFloat(sizeSlider.value));
   }
 
   function reflectPause() {

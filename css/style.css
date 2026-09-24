@@ -244,6 +244,7 @@ input[type="range"].k::-moz-range-track { background: transparent; }
 @media (max-width: 54rem) {
   .hero__inner { grid-template-columns: 1fr; gap: 1.5rem; }
   .hero { min-height: 0; padding-top: 2rem; }
+  .site-header { background: rgba(255, 255, 255, 0.88); }   /* on a phone the page scrolls under the header; keep it legible */
   .surface { order: 0; }                                  /* on a phone the name comes first */
   .surface__stage { aspect-ratio: 1 / 1; max-height: 52vh; }
   .surface__caption { display: none; }                    /* the sliders and readout are enough here */
