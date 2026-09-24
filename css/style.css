@@ -242,8 +242,12 @@ input[type="range"].k::-moz-range-track { background: transparent; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
 @media (max-width: 54rem) {
-  .hero__inner { grid-template-columns: 1fr; }
-  .surface { order: -1; }
+  .hero__inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .hero { min-height: 0; padding-top: 2rem; }
+  .surface { order: 0; }                                  /* on a phone the name comes first */
+  .surface__stage { aspect-ratio: 1 / 1; max-height: 52vh; }
+  .surface__caption { display: none; }                    /* the sliders and readout are enough here */
+  .surface__readout { font-size: 0.74rem; }
   .two-col { grid-template-columns: 1fr; }
   .facts-cols { grid-template-columns: 1fr; }
   .menu-toggle { display: inline-flex; align-items: center; background: none; border: 1px solid var(--line-strong); border-radius: 999px; padding: 0.35rem 0.9rem; font: inherit; font-weight: 500; cursor: pointer; color: var(--ink); }

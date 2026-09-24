@@ -43,7 +43,8 @@
   }
   var hopf;
   try {
-    hopf = Hopf.mount(canvas, { eta: 0.87, autoRotate: !reduce.matches, idle: !reduce.matches, onChange: reflectEta });
+    var narrow = window.matchMedia('(max-width: 54rem)').matches;
+    hopf = Hopf.mount(canvas, { eta: 0.87, fibres: narrow ? 8 : 11, autoRotate: !reduce.matches, idle: !reduce.matches, onChange: reflectEta });
   } catch (err) { root.classList.add('no-surface'); return; }
   if (!hopf) { root.classList.add('no-surface'); return; }
 
@@ -58,7 +59,7 @@
   if (sizeSlider) {
     sizeSlider.addEventListener('input', function () { applySize(parseFloat(sizeSlider.value)); });
     /* the page opens with the figure enlarged; less so on a phone, where it would swamp the text */
-    applySize(window.matchMedia('(max-width: 54rem)').matches ? Math.min(2.2, parseFloat(sizeSlider.value)) : parseFloat(sizeSlider.value));
+    applySize(window.matchMedia('(max-width: 54rem)').matches ? 1 : parseFloat(sizeSlider.value));
   }
 
   function reflectPause() {
