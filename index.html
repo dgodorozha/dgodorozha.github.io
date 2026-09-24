@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="en-GB" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Daria Godorozha: artificial intelligence, statistics and law</title>
+  <meta name="description" content="Daria Godorozha is a research student in statistics and AI at the LSE working on evaluation methodology, the geometry of space, hardware aware statistics and AI in finance.">
+  <meta name="theme-color" content="#1a3cb5">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daria Godorozha">
+  <meta property="og:description" content="Artificial intelligence, statistics and law. Research, teaching and hackathons.">
+  <meta property="og:image" content="https://dgodorozha.github.io/img/og.png">
+  <meta property="og:url" content="https://dgodorozha.github.io/">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="img/favicon-32.png?v=26" sizes="32x32" type="image/png">
+  <link rel="icon" href="img/favicon-64.png?v=26" sizes="64x64" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png?v=26">
+  <link rel="preload" href="fonts/dm-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css?v=26">
+  <script src="js/hopf.js?v=26" defer></script>
+  <script src="js/site.js?v=26" defer></script>
+</head>
+<body>
+  <a class="skip" href="#bio">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#top" aria-label="Daria Godorozha, top of page">
+        <img class="brand__mark" src="img/mark.png?v=26" srcset="img/mark.png?v=26 1x, img/mark@2x.png?v=26 2x" alt="" width="96" height="96" decoding="async">
+        Daria Godorozha
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav" aria-label="Sections">
+        <a href="#bio"><span class="mono">01</span>Bio</a>
+        <a href="#research"><span class="mono">02</span>Research</a>
+        <a href="#teaching"><span class="mono">03</span>Teaching</a>
+        <a href="#hackathons"><span class="mono">04</span>Hackathons</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-h">
+      <div class="wrap hero__inner">
+        <div>
+          <p class="eyebrow">Artificial intelligence · Statistics · Law</p>
+          <h1 id="hero-h">Daria Godorozha</h1>
+          <p class="lede">Research student in statistics &amp; AI at the London School of Economics, working on <em>evaluation methodology</em>, the geometry of space, and statistical methods that take account of the hardware on which they are computed.</p>
+          <div class="actions">
+            <a class="button" href="#research">Research</a>
+            <a class="button button--ghost" href="mailto:D.godorozha@lse.ac.uk">Email</a>
+          </div>
+        </div>
+        <div class="surface">
+          <div class="surface__stage">
+            <canvas class="surface__canvas" id="hopf" role="img" aria-label="The Hopf fibration: three nested tori of linked circles, projected from the three-sphere. Drag to turn it."></canvas>
+          </div>
+          <img class="surface__still" src="img/hopf-still.png" srcset="img/hopf-still.png 1x, img/hopf-still@2x.png 2x" width="640" height="512" alt="The Hopf fibration drawn as three nested tori of linked circles in warm, blue and teal lines." decoding="async">
+          <div class="surface__controls">
+            <label class="ctl" for="eta">latitude</label>
+            <input class="k" id="eta" type="range" min="0.62" max="1.12" step="0.005" value="0.87" aria-valuetext="eta 0.87">
+            <button class="button button--ghost button--small pause" type="button" aria-pressed="false">Pause</button>
+            <label class="ctl" for="size">size</label>
+            <input class="k k--size" id="size" type="range" min="1" max="4" step="0.02" value="3.3" aria-valuetext="size 3.3">
+            <span class="ctl ctl--val"><b class="sizeval">×3.3</b></span>
+            <div class="surface__readout" aria-live="off">
+              <span>fibre: z<sub>1</sub> = sin η·e<sup>it</sup>, z<sub>2</sub> = cos η·e<sup>i(t+ψ)</sup></span>
+              <span><strong>η = <b class="eta">0.87</b></strong> · base colatitude 2η = <b class="deg">100°</b></span>
+            </div>
+            <p class="surface__caption">Every point of the ordinary sphere lifts to a circle in the three-sphere, and the circles over one line of latitude fill a torus: three latitudes, three linked tori, projected stereographically. Slide to move the latitudes or to change the size, drag to turn.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 01 ------------------------------------------------------------------ -->
+    <section class="section" id="bio" aria-labelledby="bio-h">
+      <div class="section__band section__band--blue">
+        <div class="wrap">
+        <div class="section__head">
+          <span class="section__num">01</span>
+          <h2 id="bio-h">Bio</h2>
+        </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="two-col">
+          <div>
+            <p>I am a research student in statistics &amp; AI at the London School of Economics, reading for the MSc Statistics by Research (Finance). My work sits where evaluation methodology, geometry and computation meet. I came to statistics from law, and I still work along the boundary between the two.</p>
+            <div class="block">
+              <p class="subhead">Technical research</p>
+              <dl class="facts">
+                <dt>2026 → 2027</dt><dd><strong>Imperial College London</strong>: MSc teaching assistant and marker, Quantitative Data Analysis.</dd>
+                <dt>2026</dt><dd><strong>SeRP, Swansea University Faculty of Medicine, Health and Life Sciences</strong>: short term research contract; one of 17 chosen from over 1,100 applicants; researched and developed evaluation metrics for graph data within the context of multimodal big health data for the national databank (SeRP).</dd>
+                <dt>2026 →</dt><dd><strong>AMD/DIRAC, UKRI</strong>: co-research lead on hardware aware evaluation for statistical estimators, a UKRI funded residential research development programme with ongoing RSE and GPU support; accepted to a workshop at SC2026, with a NeurIPS submission in preparation.</dd>
+                <dt>2026</dt><dd><strong>ETH Zurich/LSE</strong>: research affiliate and first author on a secure, privacy focused RAG system for educational use, a collaboration I organised between LSE Statistics and the ETH Zurich Rectorate.</dd>
+                <dt>2025 → 2026</dt><dd><strong>Oxford CPSG, DPIR</strong>: co-research lead of a team of research assistants applying NLP to textual sentiment analysis in a human rights law context.</dd>
+                <dt>2016</dt><dd><strong>Stanford Center for the Study of Language and Information</strong>: internship under Edward Zalta, helping to edit the <em>Stanford Encyclopedia of Philosophy</em>.</dd>
+              </dl>
+            </div>
+            <div class="block">
+              <p class="subhead">Other research</p>
+              <dl class="facts">
+                <dt>2022 - 2023</dt><dd><strong>Bank of England</strong>: bank assigned research project; regression based AI research and legal research as to whether banks that engage in lobbying are riskier.</dd>
+                <dt>2019 - 2020</dt><dd><strong>QMUL Centre for Commercial Law Studies</strong>: research associate in law and AI to Professor George Walker; research on proprietary rights in respect of digital assets, and on how such assets may be accommodated within the existing categories of property law.</dd>
+                <dt>2019</dt><dd><strong>UN International Maritime Organization</strong>: research on AI transformations in supply chain management, their opportunities and their risks.</dd>
+              </dl>
+            </div>
+          </div>
+          <div>
+            <p class="subhead">Education</p>
+            <ol class="timeline">
+              <li>
+                <span class="when">2025 - 2027</span>
+                <h3>MSc Statistics by Research (Finance)</h3>
+                <div class="where">London School of Economics</div>
+                <p class="note">Distinction to date. Quantum computation (geometric linear algebra), graph learning, statistical inference, financial statistics, financial mathematics in practice. Dissertation: <em>Construct Validity in the Evaluation of Causal Reasoning in Language Models</em>. Course representative.</p>
+              </li>
+              <li>
+                <span class="when">2024 - 2025</span>
+                <h3>MSc AI and Data Science</h3>
+                <div class="where">Queen Mary University of London</div>
+                <p class="note">Distinction. Neural networks and deep learning, machine learning, data mining, information retrieval and NLP, risk, statistics, ethics. Course representative.</p>
+              </li>
+              <li>
+                <span class="when">2021 - 2024</span>
+                <h3>LLM International Financial Law</h3>
+                <div class="where">King’s College London</div>
+                <p class="note">Financial regulation, securities and banking law, mergers &amp; acquisitions, and the law of international finance.</p>
+              </li>
+              <li>
+                <h3>LLB (Hons) Law</h3>
+                <div class="where">University of Nottingham</div>
+                <p class="note">Qualifying law degree.</p>
+              </li>
+            </ol>
+            <p class="subhead" style="margin-top:2.4rem">Certificates</p>
+            <ol class="timeline timeline--certs">
+              <li>
+                <span class="when">2026</span>
+                <h3>AI, Justice and the Rule of Law</h3>
+                <div class="where">University of Oxford, Saïd Business School</div>
+                <p class="note">The governance of artificial intelligence within justice systems and the rule of law.</p>
+              </li>
+              <li>
+                <span class="when">2020 - 2022</span>
+                <h3>Graduate Certificate in Artificial Intelligence</h3>
+                <div class="where">University of Nottingham (conversion)</div>
+                <p class="note">Good Merit. Designing intelligent agents, advanced algorithms and data structures, systems and networks; research project in reinforcement learning.</p>
+              </li>
+            </ol>
+          </div>
+        </div>
+        <div class="block block--wide">
+          <p class="subhead">Other experience</p>
+              <div class="facts-cols">
+            <dl class="facts">
+              <dt>2026</dt><dd><strong>Brown Rudnick</strong> (US law firm): intern in mergers and acquisitions; legal and data analysis with trustworthy NLP and multimodal data for the prediction of regulatory outcomes, and research on corporate structures and transactions.</dd>
+              <dt>2019</dt><dd><strong>McKinsey &amp; Company</strong>: partner case weekend (selective).</dd>
+              <dt>2017</dt><dd><strong>Bourbon</strong> (maritime): head of management audits under the SOLAS, ISM, ISPS and MLC maritime regulatory regimes.</dd>
+            </dl>
+            <dl class="facts">
+              <dt>2022 - 2023</dt><dd><strong>The Fine Art Group</strong>: strategy advisory to the art investment business, comprising competitor analysis and research into art as an investment, reporting directly to the CEO.</dd>
+              <dt>2018</dt><dd><strong>KPMG</strong>: tax advisory intern and consultant in the shipping and energy practice.</dd>
+              <dt>2015 - 2017</dt><dd><strong>International Bar Association</strong>: UK representative for a two year term.</dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02 ------------------------------------------------------------------ -->
+    <section class="section section--grey" id="research" aria-labelledby="research-h">
+      <div class="section__band section__band--teal">
+        <div class="wrap">
+        <div class="section__head">
+          <span class="section__num">02</span>
+          <h2 id="research-h">Research</h2>
+        </div>
+        </div>
+      </div>
+      <div class="wrap">
+
+        <div class="cards">
+          <article class="card">
+            <span class="card__num">01</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 38 L24 8 L40 38 Z"/><path d="M14 30h4M20 22h4M26 14h4"/></svg>
+            <h3>Evaluation and construct validity</h3>
+            <p>Whether an evaluation measures the construct it claims to. I treat evaluation as a measurement problem: the validity of metrics and benchmarks, the conditions under which their conclusions hold, and how the instruments used to judge models, including models used as judges, should themselves be validated before their verdicts are relied upon.</p>
+          </article>
+          <article class="card card--blue">
+            <span class="card__num">02</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M6 16 Q24 34 42 16"/><path d="M6 24 Q24 42 42 24"/><path d="M6 32 Q24 50 42 32" opacity="0.5"/><path d="M14 6 Q22 24 14 42" opacity="0.7"/><path d="M24 4 Q32 22 24 42"/><path d="M34 6 Q42 24 34 42" opacity="0.7"/></svg>
+            <h3>Geometry of space</h3>
+            <p>The choice of geometric space as a modelling decision. Generative models are built in Euclidean space by default; I study the alternatives, with curvature, symmetry and topology treated as parameters to be matched to the structure of the data, and the consequences of that choice for the stochastic processes, metrics and sampling schemes on which a model depends.</p>
+          </article>
+          <article class="card card--warm">
+            <span class="card__num">03</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M24 4 L41 14 V34 L24 44 L7 34 V14 Z"/><path d="M24 14 L32 19 V29 L24 34 L16 29 V19 Z"/><path d="M24 4V14M41 14l-9 5M41 34l-9-5M24 44V34M7 34l9-5M7 14l9 5"/></svg>
+            <h3>HPC</h3>
+            <p>Statistics that accounts for the machine it runs on. The performance of an estimator is conventionally judged by statistical error alone; I study the trade offs that arise once computational cost, memory and parallel hardware are treated as part of the problem, and the conditions under which the preferred method changes with the environment. I lead the LSE HPC team, which won one of the two main challenges at the CIUK Cluster Challenge and placed third overall, and I have spoken at Imperial’s HPC-SIG on building a successful HPC educational initiative.</p>
+          </article>
+          <article class="card">
+            <span class="card__num">04</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 12l10 6v12l-10 6-10-6V18z"/><path d="M24 12V4M34 18l7-4M34 30l7 4M24 36v8M14 30l-7 4M14 18l-7-4"/><circle cx="24" cy="4" r="2"/><circle cx="41" cy="14" r="2"/><circle cx="41" cy="34" r="2"/><circle cx="24" cy="44" r="2"/><circle cx="7" cy="34" r="2"/><circle cx="7" cy="14" r="2"/></svg>
+            <h3>BioAI and health data</h3>
+            <p>Generative modelling and evaluation for the life sciences. Diffusion processes on non-Euclidean spaces for molecular conformation; the construction and optimisation of genome scale metabolic models; the evaluation of clinical prediction models; and metrics for graph structured, multimodal health data held within a national secure research environment.</p>
+          </article>
+          <article class="card card--blue">
+            <span class="card__num">05</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M8 10h32M8 18h22M8 26h32M8 34h16"/><circle cx="38" cy="18" r="4"/><circle cx="32" cy="34" r="4"/></svg>
+            <h3>Language, institutions and law</h3>
+            <p>Law as text, and text as evidence. I undertake a broad range of research in legal settings; my particular expertise lies in evaluation and benchmarking, causality in reasoning, linguistic time series, and sentiment and stance analysis, applied to legal, regulatory and political corpora. Beneath all of it is the modelling of geometric space, which is what allows causal and temporal analysis to be constructed at a theoretical level; the papers themselves rest on rigorous experimentation and are firmly grounded in the empirical method.</p>
+          </article>
+          <article class="card card--warm">
+            <span class="card__num">06</span>
+            <svg class="glyph" viewBox="0 0 48 48" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="14" r="3.5"/><circle cx="38" cy="12" r="3.5"/><circle cx="26" cy="30" r="3.5"/><circle cx="12" cy="38" r="3.5"/><circle cx="40" cy="34" r="3.5"/><path d="M13.5 15.5l9.5 12M34.5 13.5l-6 13.5M14.5 36l8.5-4M36.5 33.5l-7-3"/><path d="M13.5 13.5l21-1.5" stroke-dasharray="2.5 3"/></svg>
+            <h3>AI and finance</h3>
+            <p>Model risk, systemic risk and financial data. The reconstruction of financial networks and the sensitivity of supervisory conclusions to the method of reconstruction; the estimation of risk under computational constraints; and the extraction of structured information from financial data with language models, at scale.</p>
+          </article>
+        </div>
+
+        <div class="block">
+          <p class="subhead">Talks, posters and workshops</p>
+          <ul class="entries">
+            <li><span class="when">2026</span><span class="what">Hardware aware evaluation for statistical estimators<span class="where">Rising Star, Women in HPC at SC2026; accepted to an SC26 workshop (AMD/DIRAC, UKRI)</span></span></li>
+            <li><span class="when">2026</span><span class="what"><em>A Taxonomy of Geometric Space for Diffusion Models</em><span class="with">with P. Narayanan, M. Mikołajczak and A. Shethwala (LSE)</span><span class="where">Oxford Erlangen Conference on the Mathematical Foundations of AI: lightning talk and poster</span></span></li>
+            <li><span class="when">2026</span><span class="what"><em>Compute Optimal Diffusion on Learned Conformer Manifolds</em><span class="with">with R. Ahmed and D. Villegas (LSE)</span><span class="where">AIBIO (BBSRC) Conference: poster, with selective funding</span></span></li>
+            <li><span class="when">2026</span><span class="what"><em>Labour Market Effects of Technological Uncertainty</em><span class="with">with P. Lambert, S. Daniotii, G. Mater, O. Teutloff, L. Tortora, T. Fetzer and Y. Schindler</span><span class="where">AI and Economics Workshop, International Centre for Mathematical Sciences, University of Edinburgh</span></span></li>
+            <li><span class="when">2026</span><span class="what"><em>AI Driven Development of Utility Maximisation Functions for Rational Agents</em><span class="with">with S. Inman Altass (LSE)</span><span class="where">AI and Economics Workshop, ICMS, University of Edinburgh</span></span></li>
+            <li><span class="when">2025</span><span class="what"><em>Heart Disease Prediction with Boltzmann Tree Based Ensembles</em><span class="with">with S. Simmons (LSE)</span><span class="where">BSPS Annual Conference</span></span></li>
+          </ul>
+        </div>
+
+        <div class="block">
+          <div>
+            <p class="subhead">Reviewing</p>
+            <p>Reviewer for <strong>FinNLP@EMNLP</strong>, <strong>ICAIF</strong> and <strong>JUDGe@NeurIPS</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 ------------------------------------------------------------------ -->
+    <section class="section" id="teaching" aria-labelledby="teaching-h">
+      <div class="section__band section__band--warm">
+        <div class="wrap">
+        <div class="section__head">
+          <span class="section__num">03</span>
+          <h2 id="teaching-h">Teaching</h2>
+        </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="two-col">
+          <div>
+            <p class="subhead">Roles</p>
+            <ul class="entries">
+              <li><span class="when">2026 - 2027</span><span class="what">MSc teaching assistant and marker, Quantitative Data Analysis<span class="where">Imperial College London (remote)</span></span></li>
+              <li><span class="when">2025</span><span class="what">Inclusive Curriculum in Engineering Project<span class="where">Queen Mary University of London: co-created student centred resources and designed feedback mechanisms</span></span></li>
+              <li><span class="when">2014</span><span class="what">Designed and taught a course on the philosophy of symbolic systems<span class="where">Stanford SPLASH</span></span></li>
+            </ul>
+            <div class="block">
+              <p class="subhead">Committees</p>
+              <ul class="entries">
+                <li><span class="when">2026</span><span class="what">LSE Student Education Panel<span class="where">Eden Centre for Education Enhancement, Spring Term</span></span></li>
+                <li><span class="when">2025</span><span class="what">LSE Department of Statistics Teaching Committee<span class="where">Autumn Term</span></span></li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p class="subhead">Publications and talks on teaching</p>
+            <ul class="entries">
+              <li><span class="when">2026</span><span class="what"><em>Beyond Compliance: Generative AI for Student Support and Success in Higher Education. Current Practices and Future Directions</em><span class="with">with S. Al Arefi, W. Ahmad, D. Zarbouti, H. B. Eldeeb and S. A. Haider</span><span class="where">TILE-TEC 2026, published by IEEE</span></span></li>
+              <li><span class="when">2025</span><span class="what"><em>Evaluating Attainment Gaps in GenAI Legal Education</em><span class="where">Legal Education in the Age of Generative AI, Royal Holloway, University of London</span></span></li>
+              <li><span class="when">2026</span><span class="what">Creating a Successful HPC Educational Initiative<span class="with">with R. Ahmed</span><span class="where">Imperial HPC-SIG, lightning talk</span></span></li>
+              <li><span class="when">2025</span><span class="what">Legal Tech Talks Conference<span class="where">Speaker, pitching the application of machine learning to legal practice</span></span></li>
+            </ul>
+            <div class="block">
+              <p class="subhead">Standards</p>
+              <p>Member of the working group for <a href="https://standards.ieee.org/ieee/3722/12217/" rel="noopener">IEEE P3722</a>, a standard for ethical generative AI in education, from 2025 to 2026.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04 ------------------------------------------------------------------ -->
+    <section class="section section--grey" id="hackathons" aria-labelledby="hackathons-h">
+      <div class="section__band section__band--cool">
+        <div class="wrap">
+        <div class="section__head">
+          <span class="section__num">04</span>
+          <h2 id="hackathons-h">Hackathons</h2>
+        </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <ol class="hacks">
+          <li class="hack">
+            <div>
+              <span class="when">2026</span>
+              <h3>C:\&gt;DIR Global Agentic Regulator Hackathon</h3>
+              <p>Team lead of No Human Intelligence, one of six finalists. We built the Herding Scenario Lab, a decision first sandbox for financial stability supervisors: it stress tests AI market surveillance tools and intervention rules against synthetic markets of herding AI trading agents, calibrated from the regulator’s own data, and certifies each tool on the supervisory decision it exists to inform rather than on aggregate fidelity, with a conformal false alert guarantee, a signed replayable ledger, two human gates and a red team. Its central finding, that ranking tools by fidelity nearly reverses ranking them by decision accuracy, is the subject of a submission to ICAIF 2026.</p>
+            </div>
+            <span class="badge">Finalist · team lead</span>
+          </li>
+          <li class="hack">
+            <div>
+              <span class="when">2026</span>
+              <h3>EPSRC UKOMAIN 4th Workshop on Multimodal AI Hackathon</h3>
+              <p>Clinical track: can an AI be trusted in intensive care? On a synthetic cohort of 5,000 post surgical ICU patients spanning tabular, clinical note and hourly vital sign modalities, we built a multimodal fusion model and a tabular baseline for deterioration within 24 hours, and designed the evaluation around trust: missingness that is not at random and concentrates in the sickest patients, calibration, subgroup equity across age and surgery type, and profiling of who is missed and who triggers false alarms, reported as a model evidence card and safety report that a hospital safety committee could act on. Best Multimodal Idea, in a field of PhD students and postdocs.</p>
+            </div>
+            <span class="badge badge--teal">Best multimodal idea</span>
+          </li>
+          <li class="hack">
+            <div>
+              <span class="when">2026</span>
+              <h3>BioHack Edinburgh</h3>
+              <p>Pacifico Biolabs main track. A genome scale metabolic model pipeline for physiological strain optimisation, sponsored by the CHAI Hub.</p>
+            </div>
+            <span class="badge badge--blue">2nd place</span>
+          </li>
+          <li class="hack">
+            <div>
+              <span class="when">2025</span>
+              <h3>CIUK Cluster Challenge</h3>
+              <p>High performance computing. Team lead of the LSE team, fully funded by CIUK; winners of one of the two main challenges and third overall in the finals.</p>
+            </div>
+            <span class="badge">Challenge winners · 3rd overall · team lead</span>
+          </li>
+          <li class="hack">
+            <div>
+              <span class="when">2024</span>
+              <h3>Cambridge/Stanford CODEX GenAI in Law Hackathon</h3>
+              <p>Team lead. Designed and built a tool predicting the value and risk of legal settlements from case data, for use in litigation strategy; sponsored by Clifford Chance.</p>
+            </div>
+            <span class="badge badge--blue">1st on challenge · 3rd overall · team lead</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#top">Daria Godorozha</a>
+          <p style="margin-top:0.8rem;max-width:36ch">Artificial intelligence, statistics and law.</p>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:D.godorozha@lse.ac.uk">D.godorozha@lse.ac.uk</a></li>
+            <li><a href="mailto:d.godorozha@imperial.ac.uk">d.godorozha@imperial.ac.uk</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Elsewhere</h4>
+          <ul>
+            <li><a href="https://github.com/dgodorozha" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/" rel="noopener">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="small">
+        <span>&copy; <span class="year">2026</span> Daria Godorozha.</span>
+
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
