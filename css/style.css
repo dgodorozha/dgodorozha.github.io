@@ -191,6 +191,8 @@ input[type="range"].k::-moz-range-track { background: transparent; }
 .timeline .note { font-size: 0.95rem; color: var(--muted); margin-top: 0.3rem; }
 .timeline--certs::before { background: var(--g-teal); }
 .timeline--certs li::before { border-color: var(--teal); }
+.timeline--other::before { background: var(--g-warm); }
+.timeline--other li::before { border-color: var(--orange); }
 
 /* research cards: a quiet grid of cells divided by hairlines, each with a short
    gradient rule, an index and a glyph, rather than boxed panels */
