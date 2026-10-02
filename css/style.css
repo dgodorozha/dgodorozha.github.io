@@ -171,6 +171,7 @@ input[type="range"].k::-moz-range-track { background: transparent; }
 .subhead::after { content: ""; flex: 1; height: 1px; background: var(--line); }
 .block + .block { margin-top: 2.6rem; }
 .cards + .block { margin-top: 3.6rem; }
+.block + .cards { margin-top: 3.6rem; }
 
 /* facts list */
 .facts { display: grid; grid-template-columns: 9.5rem minmax(0, 1fr); gap: 0.55rem 1.2rem; margin: 0; }
