@@ -214,6 +214,7 @@ input[type="range"].k::-moz-range-track { background: transparent; }
 .entries .what { font-weight: 500; color: var(--ink); }
 .entries .with, .entries .where { display: block; font-size: 0.95rem; color: var(--muted); font-weight: 400; margin-top: 0.15rem; }
 .entries .what em { font-style: italic; font-weight: 400; }
+.entries .role { color: var(--ink); font-weight: 500; }
 
 /* hackathons */
 .hacks { list-style: none; margin: 0; padding: 0; display: grid; gap: 1rem; }
