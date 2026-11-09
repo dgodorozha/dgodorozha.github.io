@@ -209,6 +209,11 @@ input[type="range"].k::-moz-range-track { background: transparent; }
 
 /* entry lists (research outputs, teaching, hackathons) */
 .entries { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.subhead + .entries { border-top: 0; }
+.subhead + .entries > li:first-child { padding-top: 0; }
+.entries > li:last-child { border-bottom: 0; padding-bottom: 0; }
+.entries + .block { margin-top: calc(2rem + 1px); }
+#committees .block + .block { margin-top: calc(2rem + 1px); }
 .entries li { display: grid; grid-template-columns: 7.5rem minmax(0, 1fr); gap: 0.3rem 1.5rem; padding: 1rem 0; border-bottom: 1px solid var(--line); align-items: baseline; }
 .entries .when { font-family: var(--mono); font-size: 0.82rem; color: var(--muted); }
 .entries .what { font-weight: 500; color: var(--ink); }
